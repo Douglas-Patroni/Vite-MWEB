@@ -1,13 +1,42 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite-MWEB</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Produto Incrível</title>
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<header id="header">
+  <img id="header-img" alt="Logo do produto"
+  src="https://placehold.co/560x315?text=Logo"
+  >
+  <nav id="nav-bar">
+    <a class="nav-link" href="#sobre">Sobre</a>
+    <a class="nav-link" href="#video-demo">Demo</a>
+    <a class="nav-link" href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section id="sobre">
+    <h1>Bem-vindo ao Produto Incrível</h1>
+    <p>Nosso produto vai transformar seu dia a dia. Qualidade e inovação ao seu alcance!</p>
+  </section>
+
+  <section id="video-demo">
+    <h2>Veja o produto em ação</h2>
+    <iframe id="video" src="https://placehold.co/560x315?text=Vídeo+Demo"
+            title="Demo do produto" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="contato">
+    <h2>Fique por dentro das novidades</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" name="email" type="email" placeholder="Digite seu e‑mail">
+      <input id="submit" type="submit" value="Assinar">
+    </form>
+  </section>
+</main>
+</body>
 </html>
+
