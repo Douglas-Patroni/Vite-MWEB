@@ -1,13 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite-MWEB</title>
+  <meta charset="UTF-8">
+  <title>Formulário de Pesquisa</title>
+  <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <h1 id="title">Formulário de Estudante</h1>
+    <p id="description">Preencha seus dados de estudante para
+    pesquisa</p>
+    <form id="survey-form">
+        <label id="name-label"><h4>Nome:</h4>
+        <input id="name" type="text" placeholder="Douglas" required><br><br>
+        </label>
+        <label id="email-label"><h4>Email:</h4>
+        <input id="email" type="email" placeholder="...@gmail.com" required
+onivalid="this.setCustomValidity('Insira um e-mail válido.')"><br><br>
+        </label>
+        <label id="number-label"><h4>Idade:</h4>
+        <input id="number" type="number" min="6" max="120" placeholder="21" required
+onivalid="this.setCustomValidity('Insira um número válido.')"><br><br>
+        </label>
+        <hr>
+        <label id="dropdown-label"> <h4>Selecione a matéria que possui mais dificuldade:</h4>
+          <select id="dropdown">
+          <option id="dropdown-option" value="">(selecione um)</option><br>
+          <option id="dropdown-option" value="1">Português</option><br>
+          <option id="dropdown-option" value="2">Matemática</option><br>
+          <option id="dropdown-option" value="3">Outro</option><br>
+          </select><br>
+        </label>
+        <hr>
+        <label id="radio-label"> <h4>Selecione a matéria preferida:</h4>
+          <input id="radio" type="radio" name="materia" value="4"> Português <br>
+          <input id="radio" type="radio" name="materia" value="5"> Matemática <br>
+          <input id="radio" type="radio" name="materia" value="6"> Outro <br>
+        </label>
+        <hr>
+        <label id="checkbox-label"> <h4>Você possui facilidade pra aprender com:</h4>
+          <input id="checkbox" type="checkbox" name="facilidade" value="7">Vídeos</option><br>
+          <input id="checkbox" type="checkbox" name="facilidade" value="8">Leitura</option><br>
+          <input id="checkbox" type="checkbox" name="facilidade" value="9">Exercícios práticos</option><br>
+          <input id="checkbox" type="checkbox" name="facilidade" value="10">Aulas expositivas</option><br>
+          <input id="checkbox" type="checkbox" name="facilidade" value="11">Sozinho</option><br>
+          <input id="checkbox" type="checkbox" name="facilidade" value="12">Em grupo</option><br><br>
+        </label>
+        <hr>
+        <label id="textarea-label"><h4>Comentários adicionais:</h4>
+        <textarea rows="6" cols="40"></textarea><br><br>
+        </label>
+        <label id="enviar">
+          <input type="submit" id="submit">
+        </label>
+      </form>
+    </body>
 </html>
